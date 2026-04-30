@@ -1,0 +1,27 @@
+.container {
+  background: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  padding: 20px;
+  margin: 30px auto 0;
+  max-width: 600px;
+  width: 100%;
+}
+
+.title {
+  margin-bottom: 16px;
+  font-size: 20px;
+}
+
+.error {
+  background: #fff3f3;
+  color: var(--danger);
+  padding: 10px;
+  border-radius: var(--border-radius);
+  margin-bottom: 12px;
+}
+
+.status {
+  color: #666;
+  font-style: italic;
+}

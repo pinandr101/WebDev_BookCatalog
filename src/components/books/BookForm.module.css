@@ -1,0 +1,87 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.label {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.input,
+.textarea,
+.select {
+  padding: 8px 12px;
+  border: 1px solid var(--gray);
+  border-radius: var(--border-radius);
+  font-size: 14px;
+}
+
+.textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.select[multiple] {
+  height: 100px;
+}
+
+.fileInput {
+  font-size: 14px;
+}
+
+.currentImage {
+  font-size: 13px;
+  color: #666;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.submitBtn,
+.cancelBtn {
+  padding: 8px 20px;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.submitBtn {
+  background: var(--success);
+  color: white;
+}
+
+.submitBtn:hover {
+  background: #4cae4c;
+}
+
+.submitBtn:disabled {
+  background: #a0cfa0;
+  cursor: not-allowed;
+}
+
+.cancelBtn {
+  background: var(--gray-light);
+  color: #333;
+}
+
+.cancelBtn:hover {
+  background: #ced4da;
+}
+
+.error {
+  color: var(--danger);
+  font-size: 13px;
+}

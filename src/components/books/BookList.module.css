@@ -1,0 +1,67 @@
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.image {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  background-color: var(--gray-light);
+}
+
+.name {
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  flex: 1;
+}
+
+.actions {
+  padding: 0 12px 12px;
+  display: flex;
+  gap: 8px;
+}
+
+.editBtn,
+.deleteBtn {
+  flex: 1;
+  padding: 6px 0;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.editBtn {
+  background: var(--primary);
+  color: white;
+}
+
+.editBtn:hover {
+  background: var(--primary-hover);
+}
+
+.deleteBtn {
+  background: var(--danger);
+  color: white;
+}
+
+.deleteBtn:hover {
+  background: var(--danger-hover);
+}
