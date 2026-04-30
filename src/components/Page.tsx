@@ -9,7 +9,10 @@ import imagesApi from '../api/imagesApi';
 import styles from './Page.module.css';
 
 const getImageUrl = (name: string | null) => {
-  return name ? imagesApi.getImageUrl(name) : '/template.png';
+  return name ? (window.location.hostname === "localhost"
+            ? imagesApi.getImageUrl(name)
+            : `/api/image/${name}`)
+        : "/template.png";
 };
 
 const Page: React.FC = () => {

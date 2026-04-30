@@ -7,7 +7,7 @@ const AUTH = {
 }
 
 const api = axios.create({
-    baseURL: API_URL,
+    baseURL: window.location.hostname === "localhost" ? API_URL : "/api"
 })
 
 api.interceptors.request.use((config) =>{
